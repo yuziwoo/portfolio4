@@ -31,10 +31,10 @@ window.addEventListener("DOMContentLoaded", (e) => {
       MON - SUN : 00:00 - 24:00<br>
       Call. 010 2649 9674<br>
       Instagram. jiw_1012<br>
+      Email. yuziwoo@naver.com<br>
       COPYRIGHT (C)2022 YUZIWOO ALL RIGHTS RESERVED.
     </span>
   </div>`;
   document.body.appendChild(footer);
-
 
 });
