@@ -30,3 +30,129 @@
     padding-bottom: 40px;
   }
 }
+
+main {
+  width: 100%;
+  padding: 20px 30px;
+}
+
+main .content {
+  width: 100%;
+  max-width: 960px;
+  padding-top: 90px;
+  position: relative;
+  margin: auto;
+}
+
+main .content::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #222222;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 20px);
+}
+
+main .content ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 150px;
+}
+
+main .content ul li .text {
+  width: 440px;
+  height: 320px;
+  padding-left: 20px;
+  border-bottom: 1px solid #dddddd;
+}
+
+main .content ul li .text h1 {
+  font-family: 'Marcellus', serif;
+  font-size: 47px;
+  line-height: 50px;
+  font-weight: 400;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+main .content ul li .text h1::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: #222222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+
+main .content ul li:hover .text h1::after {
+  width: 100px;
+}
+
+main .content ul li .text span {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 200;
+  position: relative;
+  color: #222222;
+}
+
+main .content ul li .img {
+  width: 480px;
+  height: 320px;
+  overflow: hidden;
+}
+
+main .content ul li .img figure img {
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+main .content ul li:hover .img figure img {
+  transform: scale(1.1);
+}
+
+main .content ul li .text span strong {
+  color: #1f50ad;
+}
+
+main .content ul li .text {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: opening 0.8s forwards;
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+main .content ul li .img {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: opening2 0.8s 0.4s forwards;
+}
+
+@keyframes opening2 {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

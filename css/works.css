@@ -314,7 +314,7 @@
   transition: width 0.5s, left 0.5s;
 }
 
-.main_content .content_box ul li .text:hover h1::after {
+.main_content .content_box ul li:hover .text h1::after {
   width: 100%;
   left: 0;
 }
