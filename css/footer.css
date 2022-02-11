@@ -1,0 +1,79 @@
+footer {
+  width: 100%;
+  padding: 40px 40px;
+  border-top: 1px solid black;
+  font-size: 14px;
+  max-width: 100vw;
+}
+
+footer .site_map {
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 20px;
+  height: 40px;
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+}
+
+footer .site_map ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+footer .site_map ul li {
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+footer .site_map ul li {
+  border-right: 1px solid #ebebeb;
+}
+
+footer .site_map ul li:last-child {
+  border-right: none;
+}
+
+footer .site_map ul li a {
+  position: relative;
+}
+
+footer .site_map ul li a::after {
+  width: 0px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  background: black;
+  transition: all 0.4s;
+  content: "";
+}
+
+footer .site_map ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+footer .site_map ul li a span {
+  font-weight: 600;
+}
+
+footer .info span {
+  transition: color 0.4s;
+  color: rgba(130, 130, 130, 1);
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+footer .info:hover span{
+  color: rgba(0, 0, 0, 1);
+}
+
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 20px 20px;
+  }
+}

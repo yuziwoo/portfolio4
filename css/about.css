@@ -1,0 +1,32 @@
+.intro {
+  padding-top: 140px;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro .title {
+  padding-bottom: 60px;
+}
+
+.intro .title h1 {
+  font-family: 'Marcellus', serif;
+  font-size: 55px;
+  text-align: left;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1213px) {
+  .intro .title h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1107px) {
+  .intro {
+    padding-top: 100px;
+  }
+  .intro .title {
+    padding-bottom: 40px;
+  }
+}

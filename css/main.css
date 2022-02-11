@@ -1,0 +1,97 @@
+main {
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main video {
+  width: 100vw;
+}
+
+main .text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+main .text h1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 80px;
+  background: transparent;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: opening 1s forwards;
+}
+
+main .text h2 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 48px;
+  background: transparent;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: opening 1s 0.8s forwards;
+  margin-bottom: 3px;
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+@media screen and (max-width: 1117px) {
+  main .text h2 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  main video {
+    width: 1070px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main .text h1 {
+    font-size: 50px;
+  }
+  main .text h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 563px) {
+  main .text h1 {
+    font-size: 43px;
+  }
+  main .text h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .text h1 {
+    font-size: 41px;
+  }
+  main .text h2 {
+    font-size: 15px;
+  }
+}
