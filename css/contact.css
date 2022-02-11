@@ -156,3 +156,18 @@ main .content ul li .img {
     transform: translateY(0px);
   }
 }
+
+
+@media screen and (max-width: 1000px) {
+  main .content ul li {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 120px;
+  }
+  main .content ul li .text {
+    padding-left: 0px;
+  }
+  main .content ul li .img {
+    display: none;
+  }
+}
