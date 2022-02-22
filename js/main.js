@@ -1,5 +1,9 @@
 window.addEventListener("DOMContentLoaded", (e) => {
-  let text = document.getElementsByClassName("text")[1];
+  let video = document.getElementById("main_video");
 
+  video.addEventListener("loadeddata", () => {
+    video.play();
+  })
 
+ 
 });
