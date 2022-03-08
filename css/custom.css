@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body, header, footer,main, section, aside, button, input, div, video, ul, li, h1, h2, h3, h4, span, p, figure, img, a {
+body, header, footer, main, section, aside, button, input, div, video, ul, li, h1, h2, h3, h4, span, p, figure, img, a {
   outline: none;
   border: none;
   margin: 0;
